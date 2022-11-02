@@ -14,7 +14,6 @@
                   {{ client.id + ' | ' + client.name + ' | ' + client.email }}
                 </template>
               </v-select>
-              {{ newSale.client }}
               <div class="mt-3"></div>
               <hr>
               <v-select v-for="index in productQuantity" :key="index" :options="products" label="name" class="mb-3"
@@ -23,7 +22,6 @@
                   {{ product.id + ' | ' + product.name + ' | R$ ' + product.price }}
                 </template>
               </v-select>
-              {{ newSale.products }}
               <button class="btn btn-danger float-end ms-2" v-on:click="removeProduct()">Remove</button>
               <button class="btn btn-success float-end" v-on:click="addProduct()">Add</button>
             </div>
