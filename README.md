@@ -1,5 +1,3 @@
-# cilia_pa_front
-
 ## Project setup
 ```
 npm install
